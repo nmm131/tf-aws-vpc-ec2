@@ -1,4 +1,4 @@
 variable "vpc_id" {
-  description = "IBM Cloud API Key"
+  description = "The ID of the VPC"
   type        = string
 }

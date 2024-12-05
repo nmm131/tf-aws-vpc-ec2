@@ -28,6 +28,6 @@ module "lb" {
 }
 
 module "vpc-endpoint-service" {
-  source          = "./modules/vpc-endpoint-service"
+  source                     = "./modules/vpc-endpoint-service"
   network_load_balancer_arns = [module.lb.aws_lb.test.arn]
 }

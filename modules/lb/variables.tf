@@ -1,15 +1,14 @@
 variable "security_groups" {
-  description = "Location name for resource naming"
+  description = "The ID of the security groups"
   type        = list(string)
-  default     = "sydney"
 }
 
 variable "subnets" {
-  description = "IBM Cloud zone"
+  description = "The ID of the subnets"
   type        = list(string)
 }
 
 variable "vpc_id" {
-  description = "IBM Cloud zone"
+  description = "The ID of the VPC"
   type        = string
 }

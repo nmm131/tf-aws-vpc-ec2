@@ -1,26 +1,26 @@
 variable "region" {
-  type    = string
-  default = "us-west-1"
+  description = "The region"
+  type        = string
 }
 
 variable "vpc_id" {
-  description = "IBM Cloud API Key"
+  description = "The ID of the VPC"
   type        = string
 }
 
 variable "ami_id" {
-  description = "IBM Cloud API Key"
+  description = "The ID of the AMI"
   type        = string
 }
 
 variable "username" {
-  description = "Location name for resource naming"
+  description = "The username for the database"
   type        = string
-  default     = "sydney"
+  sensitive   = true
 }
 
 variable "password" {
-  description = "Project name prefix for resources"
+  description = "The password for the database"
   type        = string
-  default     = "air-sydney"
+  sensitive   = true
 }

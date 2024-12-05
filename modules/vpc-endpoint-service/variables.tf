@@ -1,5 +1,4 @@
 variable "network_load_balancer_arns" {
-  description = "Location name for resource naming"
+  description = "Network load balancer arns"
   type        = list(string)
-  default     = "sydney"
 }

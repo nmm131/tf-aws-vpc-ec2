@@ -1,21 +1,23 @@
 variable "subnet_ids" {
-  description = "IBM Cloud zone"
+  description = "The ID of the subnets"
   type        = list(string)
 }
 
 variable "username" {
-  description = "Location name for resource naming"
+  description = "The username for the database"
   type        = string
-  default     = "sydney"
+  sensitive   = true
 }
 
 variable "password" {
-  description = "Project name prefix for resources"
+  description = "The password for the database"
   type        = string
   default     = "air-sydney"
+  sensitive   = true
+
 }
 
 variable "vpc_security_group_ids" {
-  description = "IBM Cloud region"
+  description = "The ID of the VPC security groups"
   type        = list(string)
 }
