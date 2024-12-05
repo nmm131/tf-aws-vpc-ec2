@@ -10,3 +10,5 @@
 - Use variables for resources
 
 - Rename resources and align on standard naming convention. Resources were copied directly from Terraform documentation.
+
+- Use terraform.tfvars for sensitive variables' values
